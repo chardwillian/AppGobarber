@@ -11,7 +11,7 @@ import Routes from './routes';
 const App: React.FC = () => (
   <NavigationContainer>
     {/* Se apagar as duas próximas linhas o layout fica no centro certinho */}
-    {/* <StatusBar barStyle="light-content" backgroundColor="312e38" /> */}
+    {/* <StatusBar barStyle="light-content" backgroundColor="312e38" translucent /> */}
     <AppProvider>
       {/*   <View style={{ flex: 1, backgroundColor: '#312e38' }} />  */}
       <Routes />
