@@ -67,7 +67,7 @@ const CreateAppointment: React.FC = () => {
   );
 
   useEffect(() => {
-    api.get('providers').then(response => {
+    api.get('/providers').then(response => {
       setProviders(response.data);
     });
   }, []);
@@ -122,9 +122,9 @@ const CreateAppointment: React.FC = () => {
       date.setHours(selectedHour);
       date.setMinutes(0);
 
-      await api.post('appointments', {
+      await api.post('/appointments', {
         provider_id: selectedProvider,
-        date,
+        date: date.toISOString().split('.')[0],
       });
 
       navigate('AppointmentCreated', { date: date.getTime() });
