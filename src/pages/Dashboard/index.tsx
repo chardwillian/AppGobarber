@@ -81,12 +81,12 @@ const Dashboard: React.FC = () => {
               <ProviderName>{provider.name}</ProviderName>
 
               <ProviderMeta>
-                <Icon name="calendar" size={14} color="#ff9000" />
+                <Icon name="calendar" size={14} color="#ffffff" />
                 <ProviderMetaText>Segunda à sábado</ProviderMetaText>
               </ProviderMeta>
 
               <ProviderMeta>
-                <Icon name="clock" size={14} color="#ff9000" />
+                <Icon name="clock" size={14} color="#ffffff" />
                 <ProviderMetaText>8h às 19h</ProviderMetaText>
               </ProviderMeta>
             </ProviderInfo>

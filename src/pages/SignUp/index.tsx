@@ -133,7 +133,7 @@ const SignUp: React.FC = () => {
               />
 
               <Button onPress={() => formRef.current?.submitForm()}>
-                Entrar
+                Criar conta
               </Button>
             </Form>
           </Container>
@@ -141,7 +141,7 @@ const SignUp: React.FC = () => {
       </KeyboardAvoidingView>
       <BackToSignIn onPress={() => navigation.goBack()}>
         <Icon name="arrow-left" size={20} color="#fff" />
-        <BackToSignInText>Voltar para logon</BackToSignInText>
+        <BackToSignInText>Voltar para login</BackToSignInText>
       </BackToSignIn>
     </>
   );

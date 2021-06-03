@@ -61,7 +61,7 @@ export const ProvidersList = styled(FlatList as new () => FlatList<Provider>)`
 `;
 
 export const ProviderContainer = styled(RectButton)<ProviderContainerProps>`
-  background: ${props => (props.selected ? '#ff9000' : '#3e3b47')};
+  background: ${props => (props.selected ? '#ffffff' : '#3e3b47')};
   flex-direction: row;
   align-items: center;
   padding: 8px 12px;
@@ -91,7 +91,7 @@ export const Title = styled.Text`
 
 export const OpenDatePickerButton = styled(RectButton)`
   height: 46px;
-  background: #ff9000;
+  background: #ffffff;
   border-radius: 10px;
   align-items: center;
   justify-content: center;
@@ -140,7 +140,7 @@ export const HourText = styled.Text<HourTextProps>`
 
 export const CreateAppointmentButton = styled(RectButton)`
   height: 50px;
-  background: #ff9000;
+  background: #ffffff;
   border-radius: 10px;
   align-items: center;
   justify-content: center;

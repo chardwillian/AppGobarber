@@ -95,7 +95,7 @@ const SignIn: React.FC = () => {
             <Image source={logo2} />
 
             <View>
-              <Title>Faça seu logon</Title>
+              <Title>Faça seu login</Title>
             </View>
 
             <Form ref={formRef} onSubmit={handleSignIn}>
@@ -139,7 +139,7 @@ const SignIn: React.FC = () => {
         </ScrollView>
       </KeyboardAvoidingView>
       <CreateAccountButton onPress={() => navigation.navigate('SignUp')}>
-        <Icon name="log-in" size={20} color="#ff9000" />
+        <Icon name="log-in" size={20} color="#ffffff" />
         <CreateAccountButtonText>Criar uma conta</CreateAccountButtonText>
       </CreateAccountButton>
     </>
