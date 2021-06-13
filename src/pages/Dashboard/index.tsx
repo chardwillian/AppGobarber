@@ -9,6 +9,7 @@ import {
   Container,
   Header,
   HeaderTitle,
+  ButtonPower,
   UserName,
   ProfileButton,
   UserAvatar,
@@ -32,7 +33,7 @@ export interface Provider {
 const Dashboard: React.FC = () => {
   const [providers, setProviders] = useState<Provider[]>([]);
 
-  const { user } = useAuth();
+  const { user, signOut } = useAuth();
   const { navigate } = useNavigation();
 
   useEffect(() => {
@@ -61,9 +62,13 @@ const Dashboard: React.FC = () => {
           <UserName>{user.name}</UserName>
         </HeaderTitle>
 
-        <ProfileButton onPress={navigateToProfile}>
+        <ProfileButton style={{ marginLeft: 100 }} onPress={navigateToProfile}>
           <UserAvatar source={{ uri: user.avatar_url }} />
         </ProfileButton>
+
+        <ButtonPower onPress={signOut}>
+          <Icon name="power" size={15} color="#ff9000" />
+        </ButtonPower>
       </Header>
 
       <ProvidersList

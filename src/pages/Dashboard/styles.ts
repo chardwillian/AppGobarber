@@ -24,6 +24,11 @@ export const HeaderTitle = styled.Text`
   font-family: 'RobotoSlab-Regular';
   line-height: 28px;
 `;
+
+export const ButtonPower = styled.TouchableOpacity`
+  margin-bottom: 50px;
+`;
+
 export const UserName = styled.Text`
   color: #ff9000;
   font-family: 'RobotoSlabe-Medium';
